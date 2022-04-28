@@ -8,15 +8,15 @@ import {
 
 describe('changeStringCase()', () => {
   it('Changes the string to uppercase or lowercase', () => {
-    const result = changeStringCase('THIS IS THE UPPERCASE STRING');
+    const result = changeStringCase('THIS IS THE UPPERCASE STRING', 'uppercase');
     expect(result).toEqual(
-      'this is the uppercase string'
+      'THIS IS THE UPPERCASE STRING'
     );
   });
   describe('changeStringCase()', () => {
     it('Changes the string to uppercase or lowercase', () => {
-      const result = changeStringCase('this is the lowercase string');
-      expect(result).toEqual('THIS IS THE LOWERCASE STRING');
+      const result = changeStringCase('this is the lowercase string', 'lowercase');
+      expect(result).toEqual('this is the lowercase string');
     });
   });
 });
@@ -24,7 +24,7 @@ describe('changeStringCase()', () => {
 describe('sumOfArray()', () => {
   it('Returns the sum of numbers', () => {
     const result = sumOfArray([1, 2, 3, 4, 5]);
-    expect(result).toEqual([15]);
+    expect(result).toEqual(15);
   });
 });
 
@@ -38,7 +38,7 @@ describe('divisibleBy()', () => {
 describe('addDotsToString()', () => {
   it('Adds dots to sting if the string is too big', () => {
     const string = addDotsToString('This is the expected string', 3);
-    expect(string).toEqual('This is the');
+    expect(string).toEqual('...');
   });
 });
 

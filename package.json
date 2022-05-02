@@ -18,13 +18,18 @@
   },
   "homepage": "https://github.com/rammfall-edu/fe-pro-tests#readme",
   "devDependencies": {
+    "@babel/core": "^7.17.9",
     "@babel/plugin-transform-modules-commonjs": "^7.17.9",
     "babel-jest": "^27.5.1",
+    "babel-loader": "^8.2.5",
     "jest": "^27.5.1",
     "prettier": "^2.6.2"
   },
   "prettier": {
     "singleQuote": true,
     "printWidth": 80
+  },
+  "dependencies": {
+    "cli": "^1.0.1"
   }
 }

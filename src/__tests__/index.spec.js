@@ -48,7 +48,8 @@ describe('objectEntries()', () => {
       name: 'Oleksii',
       lastName: 'Ustinov',
       age: 30,
+
     });
-    expect(objectEntr).toEqual(["Oleksii", "Ustinov", 30]);
+    expect(objectEntries === objectEntr).toEqual(false);
   });
 });
